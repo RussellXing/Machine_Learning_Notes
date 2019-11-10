@@ -29,7 +29,7 @@
 
 5. Unsupervised learning
 	* To learn how a set of elements can be grouped (clustered)
-		* In a recommendation engine, a group of users can be clustered according to the prederence expressed for some books.
+		* In a **recommendation engine**, a group of users can be clustered according to the prederence expressed for some books.
 	* Common unsupervised applications:
 		* Object segmentation
 		* Similarity detection
@@ -37,4 +37,14 @@
 		* Recommendation engines
 		
 6. Semi-supervised learning
+	* A direct supervised approach is infeasible because the data used to train the model couldn't be representative of the whole distribution.
+	* The reader who is interested can check out _Mastering Machine Learning Algorithms, Bonaccorso G., Packt Publishing_.
+	* The main goals that a semi-supervised learning approach pursue:
+		* The propagation of labels to unlabeled samples considering the graph of the whole dataset.
+		* Performing a classificaion training model(**Support Vector Machines**)
+		* Non-linear dimensionality reduction considering the graph structure of the dataset.
+		
+7. Reinforcement learning
 	
+
+
