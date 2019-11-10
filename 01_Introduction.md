@@ -3,8 +3,8 @@
 1. Classic and adaptive machines
 	* Classic system: *input values, process and produce outputs results*
 	* Adaptive system: *continuous abilit to adapt behavior to external signals*
-        	* Transformed our electronic tools into actual cognitive extensions
-        	* Achieved this goal by filling the gap between human perception, language, reasoning, and model and artificial instruments.
+		* Transformed our electronic tools into actual cognitive extensions
+		* Achieved this goal by filling the gap between human perception, language, reasoning, and model and artificial instruments.
 
 2. Descriptive analysis
 	* The goal of **descriptive analysis** is to find out an accurate description of the phenomena that are observed and validate all the hypothesis.
@@ -19,7 +19,7 @@
 	* **Overfitting** causes overlearning due to an excessive capacity.
 	* **Regeression**: based on continuous output values
 	* **Classification**: only a dicrete number of possible outcomes
-	* Common supervised learning application:
+	* Common supervised learning applications:
 		* Predictive analysis based on regression or categorical classification
 		* Spam detection
 		* Pattern detection
@@ -28,4 +28,13 @@
 		* Automatic sequence processing
 
 5. Unsupervised learning
+	* To learn how a set of elements can be grouped (clustered)
+		* In a recommendation engine, a group of users can be clustered according to the prederence expressed for some books.
+	* Common unsupervised applications:
+		* Object segmentation
+		* Similarity detection
+		* Automation labeling
+		* Recommendation engines
+		
+6. Semi-supervised learning
 	
