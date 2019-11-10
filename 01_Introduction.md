@@ -2,9 +2,9 @@
 
 1. Classic and adaptive machines
 	* Classic system: *input values, process and produce outputs results*
-    * Adaptive system: *continuous abilit to adapt behavior to external signals*
-        * Transformed our electronic tools into actual cognitive extensions
-        * Achieved this goal by filling the gap between human perception, language, reasoning, and model and artificial instruments.
+	* Adaptive system: *continuous abilit to adapt behavior to external signals*
+        	* Transformed our electronic tools into actual cognitive extensions
+        	* Achieved this goal by filling the gap between human perception, language, reasoning, and model and artificial instruments.
 
 2. Descriptive analysis
 	* The goal of **descriptive analysis** is to find out an accurate description of the phenomena that are observed and validate all the hypothesis.
