@@ -14,17 +14,47 @@
 
 4. Error measures and cost functions
 	* Mean Square Error(MSE): 
-	
+	![MSE](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/MSE.jpg)
 	
 5. Loss function or Cost Function: to find the global minimum or a point quite close to it
 	* zero-one-loss
+	![Zero_one_loss](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Zero_one_loss.jpg)
 
 6. MAP learning
-
+	![MAP](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/MAP.jpg)
 
 7. Maximum likelihood learning
-
+	![ML](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Maximun_likelihood.jpg)
 
 8. Class Balancing
-    1. Resampling with replacement
-    	* After every sampling step, restart from the procedure.
+	1. Resampling with replacement
+		* After every sampling step, restart from the procedure.
+		```
+		import numpy as np
+		from sklearn.utils import resample
+		X_1_resampled = resample(X[Y==1], n_samples=X[Y==0].shape[0], random_state=1000)
+		Xu = np.concatenate((X[Y==0], X_1_resampled))
+		Yu = np.concatenate((Y[Y==0], np.ones(shape=(X[Y==0].shape[0], ), dtype=np.int32)))
+		```
+
+	2. SMOTE resampling
+		* SMOTE: Synthetic Minority Over-sampling Technique
+		* To consider the relationships that exist between samples and create new synthetic points along the segments connecting a group of neighbors.
+		* The new dataset has a higher variance, and a generic classifier can better find a suitable separation hypersurface.
+		```
+		from imblearn.over_sampling import SMOTE
+		smote = SMOTE(random_state=1000)
+		X_resampled, Y_resampled = smote.fit_sample(X, Y)
+		```
+		* Parameters
+			* ratio: It determines which class must be resampled (acceptable values are 'minority', 'majority', 'all', and 'not minority').
+			* k_neighbors: The number of neighbors to consider. Larger values yield more dense resamplings,
+
+9. Elenments of information theory
+	* Entropy：proportional to the uncertainty of X and is measured in bits
+		![Entropy](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/entropy.jpg)
+	* High entropy contains more information. *proportion to the variance*
+	* Perplexity is very useful for assessing the amount of uncertainty in a distribution
+		![Perplexity](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Perplxity.jpg)
+	
+
