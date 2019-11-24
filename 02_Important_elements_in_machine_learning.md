@@ -51,10 +51,18 @@
 			* k_neighbors: The number of neighbors to consider. Larger values yield more dense resamplings,
 
 9. Elenments of information theory
-	* Entropy：proportional to the uncertainty of X and is measured in bits
+	1. Entropy：proportional to the uncertainty of X and is measured in bits
 		![Entropy](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/entropy.jpg)
-	* High entropy contains more information. *proportion to the variance*
-	* Perplexity is very useful for assessing the amount of uncertainty in a distribution
-		![Perplexity](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Perplxity.jpg)
+		* High entropy contains more information. *proportion to the variance*
+		* Perplexity is very useful for assessing the amount of uncertainty in a distribution
+			![Perplexity](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Perplxity.jpg)
+	2. Cross-entropy and mutual information
+		* If we have a target probability distribution p(x), which is approximated by another distribution q(x), a useful measure is cross-entropy between p and q
+			![Cross-entropy](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/entropy.jpg)
+		* H(P, Q): price to pay to determine the right class starting from a prediction *minimize it to reduce this price*
+		* Conditional Entropy *mutual information*
+			![Conditional_CE](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Conditional_cross_entropy.jpg)
+		
+		
 	
 
