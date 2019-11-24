@@ -1,5 +1,3 @@
-1. Important Elements in Machine Learning
-
 * Data Format
 	* Parametric learning: Regressor or classifier depend on an internal parameter vector that determine the actual instance of a generic predictor.
 	* Non-parametric learning: No initial assumptions about the family of predictors
@@ -13,4 +11,10 @@
 	* Increasing the (representational) capacity is normally an irreversible operation.
 	* Underfitting: It means that the model isn't able to capture the dynamics shown by the same training set (probably because its capacity is too limited). *high bias*
 	* Overfitting: The model has an excess capacity and it's not longer  able to generalize effectively, considering the original dynamics provided by the training set. *high variance*
+
+* Error measures and cost functions
+	* Mean Square Error(MSE): 
+	![equation](C:\Users\xing_\Desktop\R&I\notes\001.jpg)
+	
+* Loss function or Cost Function: to find the global minimum or a point quite close to it
 
