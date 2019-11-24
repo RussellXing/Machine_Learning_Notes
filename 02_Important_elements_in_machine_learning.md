@@ -61,8 +61,17 @@
 			![Cross-entropy](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/entropy.jpg)
 		* H(P, Q): price to pay to determine the right class starting from a prediction *minimize it to reduce this price*
 		* Conditional Entropy *mutual information*
-			![Conditional_CE](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Conditional_cross_entropy.jpg)
-		
+			![Conditional_Entropy](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Conditional_cross_entropy.jpg)
+	3. Divergence measures between two probability distributions
+		* Kullback-Leibler divergence:
+			![KL-Divergence](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/Divergence.jpg)
+			* This quantity (also known as **information gain**) expresses the gain obtained by using the approximation q(x) instead of the original data generating process.
+		* Jensen-Shannon divergence:
+			![JS-Divergence](https://github.com/RussellXing/Machine_Learning_Notes/blob/master/graphs/JS_divergence.jpg)
+			* Its behavior is equivalent to the Kullback-Leibler divergence.
+			* The two distributions can now be swapped.
+			* Its minimization is proportional to a cross-entropy reduction.
+
 		
 	
 
